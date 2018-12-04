@@ -1,0 +1,389 @@
+EESchema Schematic File Version 4
+LIBS:DevBoard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:RJ45 J7
+U 1 1 5BF290A3
+P 5400 1350
+F 0 "J7" H 5455 2017 50  0000 C CNN
+F 1 "RJ45" H 5455 1926 50  0000 C CNN
+F 2 "Connectors:RJ45_8" V 5400 1375 50  0001 C CNN
+F 3 "~" V 5400 1375 50  0001 C CNN
+	1    5400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L thonkiconn:AudioJack2_Ground_Switch J1
+U 1 1 5BF2917A
+P 2900 1000
+F 0 "J1" H 2904 1342 50  0000 C CNN
+F 1 "AudioJack2_Ground_Switch" H 2904 1251 50  0000 C CNN
+F 2 "PlayDice:THONKICONN_hole" H 2900 1000 50  0001 C CNN
+F 3 "~" H 2900 1000 50  0001 C CNN
+	1    2900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L thonkiconn:AudioJack2_Ground_Switch J2
+U 1 1 5BF291F6
+P 2900 1500
+F 0 "J2" H 2904 1842 50  0000 C CNN
+F 1 "AudioJack2_Ground_Switch" H 2904 1751 50  0000 C CNN
+F 2 "PlayDice:THONKICONN_hole" H 2900 1500 50  0001 C CNN
+F 3 "~" H 2900 1500 50  0001 C CNN
+	1    2900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L thonkiconn:AudioJack2_Ground_Switch J3
+U 1 1 5BF2921C
+P 2900 2000
+F 0 "J3" H 2904 2342 50  0000 C CNN
+F 1 "AudioJack2_Ground_Switch" H 2904 2251 50  0000 C CNN
+F 2 "PlayDice:THONKICONN_hole" H 2900 2000 50  0001 C CNN
+F 3 "~" H 2900 2000 50  0001 C CNN
+	1    2900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L thonkiconn:AudioJack2_Ground_Switch J4
+U 1 1 5BF29240
+P 2900 2450
+F 0 "J4" H 2904 2792 50  0000 C CNN
+F 1 "AudioJack2_Ground_Switch" H 2904 2701 50  0000 C CNN
+F 2 "PlayDice:THONKICONN_hole" H 2900 2450 50  0001 C CNN
+F 3 "~" H 2900 2450 50  0001 C CNN
+	1    2900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0101
+U 1 1 5BF2A48E
+P 6000 1450
+F 0 "#PWR0101" H 6000 1300 50  0001 C CNN
+F 1 "+12V" V 6015 1578 50  0000 L CNN
+F 2 "" H 6000 1450 50  0001 C CNN
+F 3 "" H 6000 1450 50  0001 C CNN
+	1    6000 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-12V #PWR0102
+U 1 1 5BF2A4A5
+P 6000 1250
+F 0 "#PWR0102" H 6000 1350 50  0001 C CNN
+F 1 "-12V" V 6015 1378 50  0000 L CNN
+F 2 "" H 6000 1250 50  0001 C CNN
+F 3 "" H 6000 1250 50  0001 C CNN
+	1    6000 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5BF2A4BC
+P 6000 1050
+F 0 "#PWR0103" H 6000 800 50  0001 C CNN
+F 1 "GND" V 6005 922 50  0000 R CNN
+F 2 "" H 6000 1050 50  0001 C CNN
+F 3 "" H 6000 1050 50  0001 C CNN
+	1    6000 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 1450 6000 1450
+Wire Wire Line
+	5800 1050 6000 1050
+Wire Wire Line
+	5800 1250 6000 1250
+Text GLabel 3250 1000 2    50   Input ~ 0
+Jack1
+Wire Wire Line
+	3100 1000 3250 1000
+Text GLabel 5950 1550 2    50   Input ~ 0
+Jack2
+Text GLabel 3250 2000 2    50   Input ~ 0
+Jack3
+Text GLabel 3250 2450 2    50   Input ~ 0
+Jack4
+Wire Wire Line
+	5800 1550 5950 1550
+Wire Wire Line
+	3100 2000 3250 2000
+Wire Wire Line
+	3100 2450 3250 2450
+Text GLabel 3250 1500 2    50   Input ~ 0
+Jack2
+Wire Wire Line
+	3100 1500 3250 1500
+Text GLabel 5950 1650 2    50   Input ~ 0
+Jack1
+Wire Wire Line
+	5800 1650 5950 1650
+Text GLabel 5950 1350 2    50   Input ~ 0
+Jack3
+Wire Wire Line
+	5800 1350 5950 1350
+Text GLabel 5950 1150 2    50   Input ~ 0
+Jack4
+Wire Wire Line
+	5800 1150 5950 1150
+$Comp
+L power:GND #PWR0104
+U 1 1 5BF83F9E
+P 3300 2350
+F 0 "#PWR0104" H 3300 2100 50  0001 C CNN
+F 1 "GND" V 3305 2222 50  0000 R CNN
+F 2 "" H 3300 2350 50  0001 C CNN
+F 3 "" H 3300 2350 50  0001 C CNN
+	1    3300 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 2350 3300 2350
+$Comp
+L power:GND #PWR0105
+U 1 1 5BF840ED
+P 3300 1900
+F 0 "#PWR0105" H 3300 1650 50  0001 C CNN
+F 1 "GND" V 3305 1772 50  0000 R CNN
+F 2 "" H 3300 1900 50  0001 C CNN
+F 3 "" H 3300 1900 50  0001 C CNN
+	1    3300 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 1900 3300 1900
+$Comp
+L power:GND #PWR0106
+U 1 1 5BF84280
+P 3300 1400
+F 0 "#PWR0106" H 3300 1150 50  0001 C CNN
+F 1 "GND" V 3305 1272 50  0000 R CNN
+F 2 "" H 3300 1400 50  0001 C CNN
+F 3 "" H 3300 1400 50  0001 C CNN
+	1    3300 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 1400 3300 1400
+$Comp
+L power:GND #PWR0107
+U 1 1 5BF84492
+P 3300 900
+F 0 "#PWR0107" H 3300 650 50  0001 C CNN
+F 1 "GND" V 3305 772 50  0000 R CNN
+F 2 "" H 3300 900 50  0001 C CNN
+F 3 "" H 3300 900 50  0001 C CNN
+	1    3300 900 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 900  3300 900 
+$Comp
+L thonkiconn:AudioJack2_Ground_Switch J5
+U 1 1 5BF8499B
+P 2900 3050
+F 0 "J5" H 2904 3392 50  0000 C CNN
+F 1 "AudioJack2_Ground_Switch" H 2904 3301 50  0000 C CNN
+F 2 "PlayDice:THONKICONN_hole" H 2900 3050 50  0001 C CNN
+F 3 "~" H 2900 3050 50  0001 C CNN
+	1    2900 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 3050 2    50   Input ~ 0
+Jack5
+Wire Wire Line
+	3100 3050 3250 3050
+$Comp
+L power:GND #PWR0108
+U 1 1 5BF849A4
+P 3300 2950
+F 0 "#PWR0108" H 3300 2700 50  0001 C CNN
+F 1 "GND" V 3305 2822 50  0000 R CNN
+F 2 "" H 3300 2950 50  0001 C CNN
+F 3 "" H 3300 2950 50  0001 C CNN
+	1    3300 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 2950 3300 2950
+Text GLabel 5950 950  2    50   Input ~ 0
+Jack5
+Wire Wire Line
+	5800 950  5950 950 
+$Comp
+L power:GND #PWR0109
+U 1 1 5BF867C5
+P 5600 2700
+F 0 "#PWR0109" H 5600 2450 50  0001 C CNN
+F 1 "GND" V 5605 2572 50  0000 R CNN
+F 2 "" H 5600 2700 50  0001 C CNN
+F 3 "" H 5600 2700 50  0001 C CNN
+	1    5600 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR0110
+U 1 1 5BF867DE
+P 5600 2900
+F 0 "#PWR0110" H 5600 2750 50  0001 C CNN
+F 1 "+12V" V 5615 3028 50  0000 L CNN
+F 2 "" H 5600 2900 50  0001 C CNN
+F 3 "" H 5600 2900 50  0001 C CNN
+	1    5600 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-12V #PWR0111
+U 1 1 5BF86CA2
+P 5600 2500
+F 0 "#PWR0111" H 5600 2600 50  0001 C CNN
+F 1 "-12V" V 5615 2628 50  0000 L CNN
+F 2 "" H 5600 2500 50  0001 C CNN
+F 3 "" H 5600 2500 50  0001 C CNN
+	1    5600 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 5BF86CCB
+P 5600 3000
+F 0 "#PWR0112" H 5600 2850 50  0001 C CNN
+F 1 "+5V" V 5615 3128 50  0000 L CNN
+F 2 "" H 5600 3000 50  0001 C CNN
+F 3 "" H 5600 3000 50  0001 C CNN
+	1    5600 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Eurorack_Header:Eurorack_16_pin_power J6
+U 1 1 5BF88A41
+P 5300 2700
+F 0 "J6" H 5350 3117 50  0000 C CNN
+F 1 "Eurorack_16_pin_power" H 5350 3026 50  0000 C CNN
+F 2 "PlayDice:Eurorack_16_pin_header" H 5300 2700 50  0001 C CNN
+F 3 "" H 5300 2700 50  0001 C CNN
+	1    5300 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 5600 3100 2    50   Input ~ 0
+CV
+Text GLabel 5600 3200 2    50   Input ~ 0
+Gate
+Wire Wire Line
+	5100 2500 5600 2500
+Connection ~ 5600 2500
+Wire Wire Line
+	5100 2600 5600 2600
+Wire Wire Line
+	5100 2700 5600 2700
+Connection ~ 5600 2700
+Wire Wire Line
+	5100 2800 5600 2800
+Wire Wire Line
+	5100 2900 5600 2900
+Connection ~ 5600 2900
+Wire Wire Line
+	5100 3000 5600 3000
+Connection ~ 5600 3000
+Wire Wire Line
+	5100 3100 5600 3100
+Wire Wire Line
+	5100 3200 5600 3200
+Wire Wire Line
+	5600 2600 5600 2700
+Connection ~ 5600 2600
+Wire Wire Line
+	5600 2800 5600 2700
+Connection ~ 5600 2800
+Text GLabel 3250 3150 2    50   Input ~ 0
+Gate
+Text GLabel 3250 2550 2    50   Input ~ 0
+CV
+$Comp
+L power:+5V #PWR0113
+U 1 1 5BF8BE3C
+P 3300 2100
+F 0 "#PWR0113" H 3300 1950 50  0001 C CNN
+F 1 "+5V" V 3315 2228 50  0000 L CNN
+F 2 "" H 3300 2100 50  0001 C CNN
+F 3 "" H 3300 2100 50  0001 C CNN
+	1    3300 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 2100 3300 2100
+Wire Wire Line
+	3100 2550 3250 2550
+Wire Wire Line
+	3100 3150 3250 3150
+$Comp
+L Connector:Conn_01x08_Female J8
+U 1 1 5BF8D395
+P 7300 2900
+F 0 "J8" H 7193 2275 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 7193 2366 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7300 2900 50  0001 C CNN
+F 3 "~" H 7300 2900 50  0001 C CNN
+	1    7300 2900
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0114
+U 1 1 5BF93757
+P 7100 3200
+F 0 "#PWR0114" H 7100 3050 50  0001 C CNN
+F 1 "+12V" V 7115 3328 50  0000 L CNN
+F 2 "" H 7100 3200 50  0001 C CNN
+F 3 "" H 7100 3200 50  0001 C CNN
+	1    7100 3200
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:-12V #PWR0115
+U 1 1 5BF9375D
+P 7100 3000
+F 0 "#PWR0115" H 7100 3100 50  0001 C CNN
+F 1 "-12V" V 7115 3128 50  0000 L CNN
+F 2 "" H 7100 3000 50  0001 C CNN
+F 3 "" H 7100 3000 50  0001 C CNN
+	1    7100 3000
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5BF93763
+P 7100 3100
+F 0 "#PWR0116" H 7100 2850 50  0001 C CNN
+F 1 "GND" V 7105 2972 50  0000 R CNN
+F 2 "" H 7100 3100 50  0001 C CNN
+F 3 "" H 7100 3100 50  0001 C CNN
+	1    7100 3100
+	0    1    -1   0   
+$EndComp
+Text GLabel 7100 2600 0    50   Input ~ 0
+Jack2
+Text GLabel 7100 2500 0    50   Input ~ 0
+Jack1
+Text GLabel 7100 2700 0    50   Input ~ 0
+Jack3
+Text GLabel 7100 2800 0    50   Input ~ 0
+Jack4
+Text GLabel 7100 2900 0    50   Input ~ 0
+Jack5
+NoConn ~ 3100 1600
+NoConn ~ 3100 1100
+$EndSCHEMATC
