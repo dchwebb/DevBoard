@@ -72,54 +72,54 @@ $EndComp
 $Comp
 L power:+12V #PWR0101
 U 1 1 5BF2A48E
-P 6000 1650
-F 0 "#PWR0101" H 6000 1500 50  0001 C CNN
-F 1 "+12V" V 6015 1778 50  0000 L CNN
-F 2 "" H 6000 1650 50  0001 C CNN
-F 3 "" H 6000 1650 50  0001 C CNN
-	1    6000 1650
-	0    1    1    0   
-$EndComp
-$Comp
-L power:-12V #PWR0102
-U 1 1 5BF2A4A5
 P 6000 1450
-F 0 "#PWR0102" H 6000 1550 50  0001 C CNN
-F 1 "-12V" V 6015 1578 50  0000 L CNN
+F 0 "#PWR0101" H 6000 1300 50  0001 C CNN
+F 1 "+12V" V 6015 1578 50  0000 L CNN
 F 2 "" H 6000 1450 50  0001 C CNN
 F 3 "" H 6000 1450 50  0001 C CNN
 	1    6000 1450
 	0    1    1    0   
 $EndComp
 $Comp
+L power:-12V #PWR0102
+U 1 1 5BF2A4A5
+P 6000 1250
+F 0 "#PWR0102" H 6000 1350 50  0001 C CNN
+F 1 "-12V" V 6015 1378 50  0000 L CNN
+F 2 "" H 6000 1250 50  0001 C CNN
+F 3 "" H 6000 1250 50  0001 C CNN
+	1    6000 1250
+	0    1    1    0   
+$EndComp
+$Comp
 L power:GND #PWR0103
 U 1 1 5BF2A4BC
-P 6000 1550
-F 0 "#PWR0103" H 6000 1300 50  0001 C CNN
-F 1 "GND" V 6005 1422 50  0000 R CNN
-F 2 "" H 6000 1550 50  0001 C CNN
-F 3 "" H 6000 1550 50  0001 C CNN
-	1    6000 1550
+P 6000 1050
+F 0 "#PWR0103" H 6000 800 50  0001 C CNN
+F 1 "GND" V 6005 922 50  0000 R CNN
+F 2 "" H 6000 1050 50  0001 C CNN
+F 3 "" H 6000 1050 50  0001 C CNN
+	1    6000 1050
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5800 1650 6000 1650
-Wire Wire Line
-	5800 1550 6000 1550
-Wire Wire Line
 	5800 1450 6000 1450
+Wire Wire Line
+	5800 1050 6000 1050
+Wire Wire Line
+	5800 1250 6000 1250
 Text GLabel 3250 1000 2    50   Input ~ 0
 Jack1
 Wire Wire Line
 	3100 1000 3250 1000
-Text GLabel 5950 1050 2    50   Input ~ 0
+Text GLabel 5950 1550 2    50   Input ~ 0
 Jack2
 Text GLabel 3250 2000 2    50   Input ~ 0
 Jack3
 Text GLabel 3250 2450 2    50   Input ~ 0
 Jack4
 Wire Wire Line
-	5800 1050 5950 1050
+	5800 1550 5950 1550
 Wire Wire Line
 	3100 2000 3250 2000
 Wire Wire Line
@@ -128,18 +128,18 @@ Text GLabel 3250 1500 2    50   Input ~ 0
 Jack2
 Wire Wire Line
 	3100 1500 3250 1500
-Text GLabel 5950 950  2    50   Input ~ 0
+Text GLabel 5950 1650 2    50   Input ~ 0
 Jack1
 Wire Wire Line
-	5800 950  5950 950 
-Text GLabel 5950 1150 2    50   Input ~ 0
+	5800 1650 5950 1650
+Text GLabel 5950 1350 2    50   Input ~ 0
 Jack3
 Wire Wire Line
-	5800 1150 5950 1150
-Text GLabel 5950 1250 2    50   Input ~ 0
+	5800 1350 5950 1350
+Text GLabel 5950 1150 2    50   Input ~ 0
 Jack4
 Wire Wire Line
-	5800 1250 5950 1250
+	5800 1150 5950 1150
 $Comp
 L power:GND #PWR0104
 U 1 1 5BF83F9E
@@ -220,10 +220,10 @@ F 3 "" H 3300 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 2950 3300 2950
-Text GLabel 5950 1350 2    50   Input ~ 0
+Text GLabel 5950 950  2    50   Input ~ 0
 Jack5
 Wire Wire Line
-	5800 1350 5950 1350
+	5800 950  5950 950 
 $Comp
 L power:GND #PWR0109
 U 1 1 5BF867C5
@@ -384,4 +384,6 @@ Text GLabel 7100 2800 0    50   Input ~ 0
 Jack4
 Text GLabel 7100 2900 0    50   Input ~ 0
 Jack5
+NoConn ~ 3100 1600
+NoConn ~ 3100 1100
 $EndSCHEMATC
