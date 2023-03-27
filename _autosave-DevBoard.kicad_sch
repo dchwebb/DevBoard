@@ -4403,7 +4403,7 @@
     )
   )
 
-  (symbol (lib_id "Amplifier_Operational:MCP6004") (at -52.07 181.61 0) (mirror x) (unit 4)
+  (symbol (lib_id "Amplifier_Operational:MCP6004") (at -52.07 181.61 0) (mirror x) (unit 3)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 16b1a88e-f66f-4af2-8150-fa90857d4a28)
     (property "Reference" "U1" (at -52.07 176.53 0)
@@ -4438,7 +4438,7 @@
     (instances
       (project "DevBoard"
         (path "/cf927a28-c7bc-4509-acea-70dea4ea1f8a"
-          (reference "U1") (unit 4)
+          (reference "U1") (unit 3)
         )
       )
     )
@@ -6994,7 +6994,7 @@
     )
   )
 
-  (symbol (lib_id "Amplifier_Operational:MCP6004") (at -52.07 87.63 0) (mirror x) (unit 1)
+  (symbol (lib_id "Amplifier_Operational:MCP6004") (at -52.07 87.63 0) (mirror x) (unit 4)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 881a680b-4d36-4338-9dc8-885adbc51cd0)
     (property "Reference" "U1" (at -52.07 82.55 0)
@@ -7029,7 +7029,7 @@
     (instances
       (project "DevBoard"
         (path "/cf927a28-c7bc-4509-acea-70dea4ea1f8a"
-          (reference "U1") (unit 1)
+          (reference "U1") (unit 4)
         )
       )
     )
@@ -7926,7 +7926,7 @@
     )
   )
 
-  (symbol (lib_id "Amplifier_Operational:MCP6004") (at -52.07 139.7 0) (mirror x) (unit 3)
+  (symbol (lib_id "Amplifier_Operational:MCP6004") (at -52.07 139.7 0) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a8026a69-04c4-4a3b-bf34-168ea400c0aa)
     (property "Reference" "U1" (at -52.07 134.62 0)
@@ -7961,7 +7961,7 @@
     (instances
       (project "DevBoard"
         (path "/cf927a28-c7bc-4509-acea-70dea4ea1f8a"
-          (reference "U1") (unit 3)
+          (reference "U1") (unit 2)
         )
       )
     )
@@ -9202,7 +9202,7 @@
     )
   )
 
-  (symbol (lib_id "Amplifier_Operational:MCP6004") (at -53.34 45.72 0) (mirror x) (unit 2)
+  (symbol (lib_id "Amplifier_Operational:MCP6004") (at -53.34 45.72 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d762ab59-eec8-4966-8442-62c51563bf7a)
     (property "Reference" "U1" (at -53.34 40.64 0)
@@ -9240,7 +9240,7 @@
     (instances
       (project "DevBoard"
         (path "/cf927a28-c7bc-4509-acea-70dea4ea1f8a"
-          (reference "U1") (unit 2)
+          (reference "U1") (unit 1)
         )
       )
     )

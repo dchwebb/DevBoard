@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 44,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -10,7 +10,8 @@
       "-12V",
       "+3V3",
       "+5V",
-      "+3.3VA"
+      "+3.3VA",
+      "-5V"
     ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
@@ -24,10 +25,10 @@
     "ratsnest_display_mode": 0,
     "selection_filter": {
       "dimensions": true,
-      "footprints": false,
+      "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": true,
       "pads": false,
       "text": true,
@@ -51,7 +52,6 @@
       14,
       15,
       16,
-      17,
       18,
       19,
       20,
@@ -71,7 +71,7 @@
       35,
       36
     ],
-    "visible_layers": "ffdffff_ffffffff",
+    "visible_layers": "ffcffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
