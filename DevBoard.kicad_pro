@@ -84,16 +84,16 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
-        "missing_courtyard": "warning",
+        "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "npth_inside_courtyard": "warning",
         "padstack": "warning",
         "pth_inside_courtyard": "warning",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "ignore",
@@ -379,7 +379,7 @@
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
-      "lib_symbol_issues": "ignore",
+      "lib_symbol_issues": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -532,6 +532,18 @@
     [
       "cf927a28-c7bc-4509-acea-70dea4ea1f8a",
       ""
+    ],
+    [
+      "92982862-ad01-4e01-8d86-40264153cebc",
+      "DAC"
+    ],
+    [
+      "ad0a3740-d32b-426d-ae24-dd21128a228c",
+      "EurorackToMCU"
+    ],
+    [
+      "13ff4b92-d0a6-4d86-9997-c3748bdc90af",
+      "MCUToEurorack"
     ]
   ],
   "text_variables": {}
