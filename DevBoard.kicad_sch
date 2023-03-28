@@ -6968,7 +6968,7 @@
     (property "Reference" "D4" (at 149.86 69.85 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "5V_LED" (at 149.86 72.39 0)
+    (property "Value" "3V3_LED" (at 149.86 72.39 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 149.86 67.31 90)
@@ -9226,6 +9226,31 @@
     )
   )
 
+  (symbol (lib_id "power:+3.3V") (at 139.7 67.31 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid d3a92ee0-5db0-4c7a-a8ff-9d374e0d8101)
+    (property "Reference" "#PWR019" (at 143.51 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 135.89 67.945 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 139.7 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 139.7 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6f9c6092-2622-409d-ac78-4f621312a3e5))
+    (instances
+      (project "DevBoard"
+        (path "/cf927a28-c7bc-4509-acea-70dea4ea1f8a"
+          (reference "#PWR019") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R_Small") (at 143.51 93.98 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d4052205-f415-4546-8e6e-215d5fc20f53)
@@ -9902,31 +9927,6 @@
       (project "DevBoard"
         (path "/cf927a28-c7bc-4509-acea-70dea4ea1f8a"
           (reference "#PWR0102") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 139.7 67.31 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid e67a38a1-430d-4620-8050-2993f68681cd)
-    (property "Reference" "#PWR097" (at 143.51 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 135.89 67.945 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 139.7 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 139.7 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid de43a74c-ea57-4ec1-8617-a3b4b21572c4))
-    (instances
-      (project "DevBoard"
-        (path "/cf927a28-c7bc-4509-acea-70dea4ea1f8a"
-          (reference "#PWR097") (unit 1)
         )
       )
     )
