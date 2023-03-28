@@ -1,4 +1,4 @@
-21692860905506701
+21694540933624684
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -51666,6 +51666,13 @@ MLPF-WB-01E3
 0
 6
 6
+Custom_Footprints
+MiniVoltmeter
+
+
+0
+3
+3
 Custom_Footprints
 MountingHole_6.1mm
 Mounting Hole 6mm, no annular
