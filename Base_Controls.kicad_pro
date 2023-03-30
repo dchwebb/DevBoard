@@ -45,7 +45,8 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "45_degree_only": false,
+          "min_clearance": 0.508
         }
       },
       "diff_pair_dimensions": [
@@ -72,7 +73,7 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_type_mismatch": "warning",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
@@ -87,16 +88,16 @@
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
-        "npth_inside_courtyard": "warning",
-        "padstack": "warning",
-        "pth_inside_courtyard": "warning",
+        "npth_inside_courtyard": "ignore",
+        "padstack": "error",
+        "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "ignore",
-        "silk_over_copper": "warning",
-        "silk_overlap": "ignore",
+        "silk_edge_clearance": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "ignore",
+        "starved_thermal": "error",
         "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -110,6 +111,8 @@
         "zones_intersect": "error"
       },
       "rules": {
+        "allow_blind_buried_vias": false,
+        "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
@@ -123,9 +126,9 @@
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.09999999999999999,
-        "min_via_diameter": 0.5,
+        "min_track_width": 0.19999999999999998,
+        "min_via_annular_width": 0.049999999999999996,
+        "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -172,19 +175,17 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.4
       ],
       "via_dimensions": [
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.8,
-          "drill": 0.4
         }
       ],
-      "zones_allow_external_fillets": false
+      "zones_allow_external_fillets": false,
+      "zones_use_no_outline": true
     },
     "layer_presets": [],
     "viewports": []
@@ -394,7 +395,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "error",
@@ -409,7 +410,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "DevBoard.kicad_pro",
+    "filename": "Base_Controls.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -443,9 +444,9 @@
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.4,
-        "via_diameter": 1.2,
-        "via_drill": 0.6,
+        "track_width": 0.3,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       }
     ],
@@ -454,32 +455,7 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "Power",
-        "pattern": "*12V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "*12V_IN"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "*3V3*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "*3.3V*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "*5V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "GND"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -487,7 +463,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Base_Controls.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -538,20 +514,8 @@
   },
   "sheets": [
     [
-      "cf927a28-c7bc-4509-acea-70dea4ea1f8a",
+      "ae823ff6-f75c-4374-a57b-028bd2cefa34",
       ""
-    ],
-    [
-      "92982862-ad01-4e01-8d86-40264153cebc",
-      "DAC"
-    ],
-    [
-      "ad0a3740-d32b-426d-ae24-dd21128a228c",
-      "EurorackToMCU"
-    ],
-    [
-      "13ff4b92-d0a6-4d86-9997-c3748bdc90af",
-      "MCUToEurorack"
     ]
   ],
   "text_variables": {}

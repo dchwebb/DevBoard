@@ -1,6 +1,9 @@
 DevBoard-backups/
 bu/DevBoard-backups/
+Base_Controls-backups/
+Base_Panel-backups/
 
 *.kicad_pcb-bak
+*.kicad_sch-bak
 
-DevBoard.kicad_sch-bak
+
